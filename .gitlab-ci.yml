@@ -1,0 +1,10 @@
+image: moosivp/moos-ivp:trunk-gui
+
+# variables:
+#   MOOSIVP_SOURCE_TREE_BASE: '/home/moos/moos-ivp'
+
+build:
+  stage: build
+  script:
+    - ln -s /home/moos/moos-ivp ../moos-ivp
+    - ./build.sh

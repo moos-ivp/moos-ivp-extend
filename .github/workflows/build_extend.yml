@@ -1,0 +1,21 @@
+name: GitHub Actions Demo
+on: [push]
+
+jobs:
+
+  build-extend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          path: 'moos-ivp-extend'
+      - run: svn co https://oceanai.mit.edu/svn/moos-ivp-aro/trunk/ moos-ivp
+      - name: Build MOOS-IvP
+        working-directory: moos-ivp
+        run: |
+          ./build-moos.sh --minrobot --release
+          ./build-ivp.sh --nogui
+      - name: Build moos-ivp-extend
+        working-directory: moos-ivp-extend
+        run: |
+          ./build.sh

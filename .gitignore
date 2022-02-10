@@ -43,3 +43,6 @@
 *._moos
 .LastOpenedMOOSLogDirectory
 
+build
+bin
+lib

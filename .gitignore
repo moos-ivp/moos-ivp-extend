@@ -40,9 +40,18 @@
 *.alog
 *.blog
 *.ylog
+*.klog
+*.moos++
 *._moos
+*._bhv
 .LastOpenedMOOSLogDirectory
+MOOSLog*/
 
-build
-bin
-lib
+# Build dirs
+build/
+bin/
+lib/
+
+# Temp files (emacs, etc)
+*#
+*~

@@ -1,5 +1,7 @@
 # moos-ivp-extend
 
+[![Build MOOS-IvP Extend repository](https://github.com/davidbertucci/moos-ivp-extend/actions/workflows/build_extend.yml/badge.svg)](https://github.com/davidbertucci/moos-ivp-extend/actions/workflows/build_extend.yml)
+
 |              |                        |
 |:------------ |:---------------------- |
 | FILE:        | moos-ivp-extend/README |
